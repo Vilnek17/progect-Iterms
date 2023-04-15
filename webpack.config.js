@@ -45,6 +45,17 @@ module.exports = {
                 },
                 exclude: /node_modules/,
             },
+            {
+                test: /\.(png|jpe?g|gif|webp)$/i,
+                use: [
+                    {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'static/media/[name].[hash:8].[ext]',
+                    },
+                    },
+                ],
+            },
         ]
     },
     optimization: {
