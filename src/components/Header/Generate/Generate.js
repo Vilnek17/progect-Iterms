@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Generate = () => {
-    return (
-      <>
+  return (
+    <>
       <h1>Generate</h1>
       <p>This is Generate page</p>
-      </>)}
-  export default Generate
+    </>);
+};
+export default Generate;
