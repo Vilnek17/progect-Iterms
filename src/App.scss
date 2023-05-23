@@ -1,12 +1,15 @@
 body {
-    width:1920px;
+    background: #F1F3F6;
 }
-* {
-    margin:0;
+
+.wrapper_background_selection { 
+   box-sizing: border-box;
+   background-size:cover; 
+   height:862px;
+   background-repeat: no-repeat; 
+   max-width:100%;
 }
-.wrapper_background_selection {
-   background-image: url('./assets/Hero\ image\ backgruund.svg');
-   background-repeat: no-repeat;
-   height: 862px;
-   width: 1920px;
+.app{
+width:100%;
 }
+

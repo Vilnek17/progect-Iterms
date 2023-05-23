@@ -1,17 +1,23 @@
-@font-face {
-    font-family: 'Poppins';
-    src: url('/src/fonts/Poppins-Light.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 $text-color:#1d212a;
 $Iterms-button:#8770FF;
-$Poppins:"Poppins", Halvetica;
+$Poppins:"Poppins", Nunito;
+$Roboto:"Roboto",Halvetica;
+$OpenSans:"Open Sans", sans-serif;
 
+.main {
+    position: relative;
+    // background: linear-gradient(180deg, #FFFFFF, #ebe9e9);
+    background: #F1F3F6;
+}
 .main_tutorial {
     position: absolute;
     width: 437px;
     height: 370px;
     left: 470px;
     top: 202px;
+    padding-bottom: 55px;
 }
 
 .main_tutorial_text{
@@ -23,4 +29,516 @@ letter-spacing: 0.1em;
 text-transform: uppercase;
 color: #B6BFD9;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main_tutorial_aggrements{
+width: calc(89%);
+height:174px;
+font-family: $Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+line-height: 120%;
+color: #1D212A;
+}
+
+.main_tutorial_aggrements_policy{
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #646464; 
+    & .main_tutorial_aggrements_policy_color{
+        color:#32D989;
+    }
+    & .main_tutorial_aggrements_policy_bolder {
+        font-weight: bold;
+    }
+}
+.main_tutorial_generate-button{
+    padding-top: 21px;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.main_tutorial_generate-button-free{
+    width: 201px;
+    height: 48px;
+    background: #8770FF;
+    border-radius: 8px;
+    font-family: $Poppins;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+.main_tutorial_generate-button-reveal {
+    border: none;
+    color: black;
+    font-family: $Poppins;
+    width: auto;
+    height: 48px;
+    background-color: #F1F3F6;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px; 
+    cursor: pointer;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #32D989;
+    border-right: 2px solid #32D989;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.main_background_line_gray {
+    z-index: 1;
+}
+
+.main_background_book{
+    z-index: 2;
+}
+
+.main_background_cookie{
+    z-index: 1;
+}
+
+.main_tutorial-streamline_text_gradient{
+position: absolute;
+width: 254px;
+height: 288px;
+left: 853px;
+top: 847px;
+font-family: $Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 288px;
+background: linear-gradient(180deg, #FFFFFF 91.39%, rgba(255, 255, 255, 0) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.main_tutorial-streamline_description_name{
+position: absolute;
+width: 248px;
+height: 27px;
+left: 985px;
+top: 1013px;
+font-family: $Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #B6BFD9;
+}
+
+.main_tutorial-streamline_description{
+width:474px;
+}
+
+.main_tutorial-streamline_description_title{
+position: absolute;
+width: 390px;
+height: 90px;
+left: calc(50% - 380px/2 + 205px);
+top: 1030px;
+font-family: $Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 48px;
+color: #1D212A;
+}
+
+.main_tutorial-streamline_description_more{
+position: absolute;
+width: 411.01px;
+height: 130px;
+left: 975px;
+top: 1170px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #565A65;
+}
+
+.main_tutorial-streamline_description_detail{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 550px;
+height: 304px;
+left: 1020px;
+top: 1322px;
+}
+
+.main_tutorial-streamline_description_detail_background{
+    box-sizing: border-box;
+}
+
+.main_tutorial-streamline_description_detail_firstPoint, .main_tutorial-streamline_description_detail_secondPoint,
+.main_tutorial-streamline_description_detail_thirdthPoint,
+.main_tutorial-streamline_description_detail_fourthPoint, 
+.main_tutorial-streamline_description_detail_fifthPoint,
+.main_tutorial-streamline_description_detail_sixthPoint,
+.main_tutorial-streamline_description_detail_seventhPoint,
+.main_tutorial-streamline_description_detail_eigthPoint{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+gap:14px;
+}
+
+.main_tutorial-streamline_description_detail_style{
+font-family: $OpenSans;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #565A65;
+}
+
+.main_tutorial_streamline_description_button_free {
+    width: 201px;
+    height: 48px;
+    background: #8770FF;
+    border-radius: 8px;
+    font-family: $Poppins;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+.main_tutorial_streamline_description_button{
+    border: none;
+    color: black;
+    font-family: $Poppins;
+    width: auto;
+    height: 48px;
+    background-color: #F1F3F6;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 975px;
+    top: 1622px;
+    gap:10px;
+}
+
+.main_tutorial_streamline_description_button_reveal{
+    border: none;
+    color: black;
+    font-family: $Poppins;
+    width: auto;
+    height: 48px;
+    background-color:  #F1F3F6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px; 
+    cursor: pointer;
+}
+
+  .arrow {
+    position: absolute;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #32D989;
+    border-right: 2px solid #32D989;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.main_swiper{
+    position: absolute;
+    width: 1591px;
+    height: 458px;
+    left: 426px;
+    top: 1793px;
+}
+
+.main_swiper_solution_name{
+    position:absolute;
+    left: 320px;
+    top: 1650px;
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 288px;
+    background: linear-gradient(180deg, #FFFFFF 31.39%, rgba(255, 255, 255, 0) 94.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.main_cardPricing_background{
+    width:1113px;
+    height: 1113px;
+    position: absolute;
+    border-radius: 50%;
+    left:395px;
+    background: #B6BFD9;
+    opacity: 0.1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top:2700px;
+}
+
+.main_cardPricing_cardLubenda{
+    position: absolute;
+    width: 464px;
+    height: 454px;
+    left: 157px;
+    top: 3250px;
+}
+
+.main_cardPricing_cardGetPrivacy{
+    position: absolute;
+    width: 389px;
+    height: 280px;
+    left: 300px;
+    top: 2700px;
+    filter: brightness(1.2);
+}
+
+.main_cardPricing_cardGetTerms{ 
+    position: absolute;
+    width: 390px;
+    height: 500px;
+    left: 1307px;
+    top: 2700px;
+    background-color: none;
+}
+
+.main_cardPricing_cardShopify{
+    position: absolute;
+    width: 442px;
+    height: 260px;
+    left: 1357px;
+    top: 3291px;
+}
+
+.main_cardPricing_detail{
+    position: absolute;
+    width: 654px;
+    height: 223px;
+    left: 643px;
+    top: 2850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+}
+.main_cardPricing_detail p{
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #B6BFD9;
+
+}
+
+.main_cardPricing_detail h2{
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #1D212A;
+}
+
+.main_cardPricing_detail h4{
+    font-family: $OpenSans;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #565A65;
+    }
+
+.main_cardPricing_cardCircle{
+    position: absolute;
+    width: 267px;
+    height: 203px;
+    left: 855px;
+    top: 3200px;
+    }
+
+.main_cardPricing_acsess{
+    position: absolute;
+    width: 206px;
+    height: 29px;
+    left: 857px;
+    top: 3503px;
+}
+
+.main_cardPricing_acsess h2,h5{
+    font-family: $Poppins;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #1D212A;
+}
+
+.main_cardPricing_cardPencil{
+    position: absolute;
+    width: 452px;
+    height: 690px;
+    left: 1063px;
+    top: 3312px;
+}
+.main_swiperPost{
+    position: absolute;
+    width: 950px;
+    height: 350px;
+    left: 927px;
+    top: 5334px;
+}
+.main_safeguards{
+    position: relative;
+    .main_safeguards_background{
+        position: absolute;
+        width: 100%;
+        height: 779px;
+        left: 0px;
+        top:3882px;
+    }
+    .main_safeguards_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        position: absolute;
+        width: 620px;
+        height: 141px;
+        left: 405px;
+        top: 4030px;
+
+        h1{
+            font-size: 48px;
+        }
+
+        h1,h3,h4 {
+            font-family: $Poppins;
+            color: white;
+            font-weight: 300;
+        }
+
+    }
+
+    .main_safeguards_compliant{
+        position: absolute;
+        left: 822px;
+        top: 4230px;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+       
+    .main_safeguards_compliant_text{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        position: absolute;
+        left: 820px;
+        top: 4290px;
+
+        h1{
+            font-size: 38px;
+        }
+
+        h1,h4{
+            font-style: normal;
+            font-weight: 400;
+            color: white;
+            font-family: $OpenSans;
+        }
+    }
+
+    .main_safeguards_business{
+        position: absolute;
+        left: 622px;
+        top: 4300px;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+       
+    .main_safeguards_business_text{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        position: absolute;
+        left: 620px;
+        top: 4380px;
+
+        h1{
+            font-size: 38px;
+        }
+
+        h1,h4{
+            font-style: normal;
+            font-weight: 400;
+            color: white;
+            font-family: $OpenSans;
+        }
+    }
+
+    .main_safeguards_policies{
+        position: absolute;
+        left: 422px;
+        top: 4400px;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+    }
+       
+    .main_safeguards_policies_text{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        position: absolute;
+        left: 420px;
+        top: 4465px;
+
+        h1{
+            font-size: 38px;
+        }
+
+        h1,h4{
+            font-style: normal;
+            font-weight: 400;
+            color: white;
+            font-family: $OpenSans;
+        }
+    }
+    .main_safeguards_policies_line{
+        position: absolute;
+        width: 1014px;
+        height: 1px;
+        left: 400px;
+        top: 4545px;
+    }
+    
 }
